@@ -166,8 +166,20 @@ footer a:hover {
     Responsive design
    ============================================= */
 @media screen and (max-width: 600px) {
+    header {
+        padding: 48px 20px 36px;
+        text-align: center;
+    }
+
     header h1 {
-        line-height: 1;
+        font-size: calc(28px + 1vw);
+        line-height: 1.05;
+        margin-bottom: 12px;
+    }
+
+    header p {
+        font-size: calc(14px + 0.2vw);
+        line-height: 1.7;
     }
 
     nav ul {
@@ -177,29 +189,36 @@ footer a:hover {
 
     nav a {
         text-align: center;
+        padding: 16px 18px;
         border-top: 1px solid rgba(255, 255, 255, 0.12);
     }
 
     main {
         width: 92vw;
-        margin: 0 auto;
+        margin: 20px auto;
+        gap: 16px;
+        /* the gap: **; is the same function just like <br> in the html i think we learned it
+        in the lecture but just in case i have to make a comment here for
+        somethings i can't be 100% sure we learned.'*/
     }
 
-    main h2 {
-        font-size: 24px;
+    .card {
+        padding: 18px;
     }
 
-    main h3 {
-        font-size: 16px;
+    .card a {
+        font-size: calc(16px + 0.2vw);
     }
 
-    main p {
-        font-size: 15px;
+    footer {
+        text-align: center;
+        padding: 28px 20px;
     }
 
-    #legends article {
-        flex: 0 0 100%;
+    footer p {
+        font-size: 13px;
     }
 }
+
 
 
