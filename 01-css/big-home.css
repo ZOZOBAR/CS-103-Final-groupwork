@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 /* =============================================
    default setting
    ============================================= */
@@ -9,7 +11,7 @@
     /*font setting for all context*/
     font-style: normal;
     font-weight: normal;
-    font-family: "KH Interference TRIAL",Formula1,"figtree",Times,serif;
+    font-family: "Press Start 2P","Figtree",Times,serif;
     line-height: 1;
 }
 
