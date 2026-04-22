@@ -1,3 +1,28 @@
+@font-face {
+    font-family: "KH Interference TRIAL";
+    src: url('../fonts/KHInterferenceTRIAL-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KH Interference TRIAL";
+    src: url('../fonts/KHInterferenceTRIAL-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KH Interference TRIAL";
+    src: url('../fonts/KHInterferenceTRIAL-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Formula1";
+    src: url('../fonts/Formula1 Display-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -9,7 +34,7 @@
     font-variant: small-caps;
     font-weight: normal;
     font-size: 14px;
-    font-family: "KH Interference TRIAL",Formula1,"figtree",Times,serif;
+    font-family: "KH Interference TRIAL","Formula1","figtree",Times,serif;
     line-height: 1;
 }
 /*-------------------------------------------------------------------------------------------*/

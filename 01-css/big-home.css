@@ -1,4 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face {
+    font-family: "KH Interference TRIAL";
+    src: url('../fonts/KHInterferenceTRIAL-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KH Interference TRIAL";
+    src: url('../fonts/KHInterferenceTRIAL-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KH Interference TRIAL";
+    src: url('../fonts/KHInterferenceTRIAL-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Formula1";
+    src: url('../fonts/Formula1 Display-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* =============================================
    default setting
@@ -11,7 +34,7 @@
     /*font setting for all context*/
     font-style: normal;
     font-weight: normal;
-    font-family: "Press Start 2P","Figtree",Times,serif;
+    font-family: "KH Interference TRIAL","Formula1",Times,serif;
     line-height: 1;
 }
 
