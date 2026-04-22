@@ -49,7 +49,6 @@ header {
     background: #111111;
     padding: 80px 6vw 64px;
     border-bottom: 3px solid #e10600;
-    text-align: center;
 }
 
 header h1 {
@@ -62,6 +61,7 @@ header h1 {
     margin-bottom: 19px;
 }
 
+/* Header subtitle */
 header p {
     font-family: 'Arial', 'Helvetica', sans-serif;
     font-size: 16px;
@@ -112,74 +112,6 @@ nav a:hover {
 }
 
 /* =============================================
-   MAIN — topic grid
-   ============================================= */
-main {
-    max-width: 1000px;
-    margin: 3rem auto;
-    padding: 0 2rem;
-}
-
-main h2 {
-    font-size: 1.4rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-}
-
-.nav-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-}
-
-.nav-card {
-    display: block;
-    background: #1a1a1a;
-    border: 2px solid #333;
-    padding: 1.5rem 1.2rem;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    transition: border-color 0.2s ease, transform 0.15s ease;
-    border-radius: 4px;
-}
-
-.nav-card:hover {
-    border-color: #e10600;
-    transform: translateY(-3px);
-}
-
-.nav-card h3 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.nav-card p {
-    font-size: 0.85rem;
-    color: #aaaaaa;
-    line-height: 1.4;
-}
-
-.credit-link {
-    display: block;
-    text-align: center;
-    margin-top: 2.5rem;
-    color: #666;
-    font-size: 0.9rem;
-    text-decoration: underline;
-}
-
-.credit-link:hover {
-    color: #cccccc;
-}
-
-/* =============================================
    FOOTER
    ============================================= */
 footer {
@@ -225,10 +157,24 @@ footer a:hover {
 
     main {
         width: 92vw;
-        margin: 1.5rem auto;
+        margin: 0 auto;
     }
 
     main h2 {
         font-size: 24px;
     }
+
+    main h3 {
+        font-size: 16px;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    #legends article {
+        flex: 0 0 100%;
+    }
 }
+
+
