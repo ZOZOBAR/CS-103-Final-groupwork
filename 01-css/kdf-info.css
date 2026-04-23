@@ -1,1 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
 
+
+/* 头部 */
+.page-header {
+    background-color: #ff4655;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.page-header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* 主体 */
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+/* 区块 */
+.content-section {
+    border-left: 5px solid #ff4655;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    color: #ff4655;
+    margin-bottom: 20px;
+}
+
+
+/* 卡片布局 */
+.card {
+    display: flex; /* 照片和文字横着 */
+    align-items: center;   /* 配合flex，整个元素垂直居中 */
+    margin-bottom: 20px;
+}
+
+
+/* 图片固定大小（核心） */
+.card img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;   /* “object-fit”Keep image ratio and fill the container, cropping extra parts */
+                         /* 保持图片比例并填满容器，多余部分自动裁剪 */
+    display: block;        /* 防止底部留白 */
+    margin-right: 15px;    /* 图片和文字间距 */
+}
+
+
+/* 文字部分 */
+/* Set width for text area */
+/* 设置文字区域宽度 */
+.card div {
+    width: 70%;
+}
+.card h3 {
+    margin: 0 0 10px 0;
+    color: #ff4655;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* 页脚 */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
