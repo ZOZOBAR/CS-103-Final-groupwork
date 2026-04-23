@@ -25,7 +25,7 @@ body {
 header {
     height:100%;
     width:100%;
-    background: url("./src/court.png");
+    background: url("../03-images/court.png");
     background-size:cover;
     background-position:center;
     text-align: center;
