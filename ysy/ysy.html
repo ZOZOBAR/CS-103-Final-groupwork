@@ -4,104 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula 1 | Engineering and Speed</title>
-    <link rel="stylesheet"  type="text/css" href="../01-css/yss.css">
+    <link rel="stylesheet"  type="text/css" href="yss.css">
 </head>
 
 <body>
-<div id="intro-overlay">
-    <div class="intro-logo">
-        <video id="intro-video" src="../src/F1.mp4" autoplay muted playsinline></video>
-    </div>
-</div>
+<!--here is the loading animation section video in HTML-->
+<!--<div id="intro-overlay">-->
+<!--    <div class="intro-logo">-->
+<!--        <video id="intro-video" src="./src/F1.mp4" autoplay muted playsinline></video>-->
+<!--    </div>-->
+<!--</div>-->
 
 <div id="page-wrapper">
+    <!--
+Note:
+I learned the use of <section> and <article> from online HTML tutorials and documentation (such as MDN)
+while trying to better organize my webpage structure.
 
-    <header>
+In class, we mainly used basic tags like <div>, but I wanted to understand how to make the structure more
+meaningful and easier to read.
+
+I learned that:
+- <section> is used to group related content into logical parts of a page (such as "History", "Circuits", or "Technology").
+- <article> is used for independent pieces of content that can stand on their own, such as driver profiles or feature blocks.
+
+My takeaway is that semantic tags make the HTML more organized and easier to understand,
+both for developers and for browsers.
+-->
+
+    <header id ='page-header'>
         <h1>Formula 1: The Apex of Engineering and Speed</h1>
         <p>Formula 1 combines elite driving skill, advanced engineering, and global competition at the highest level of motorsport.</p>
     </header>
     <nav>
         <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="../history.html">History</a></li>
-            <li><a href="../circuits.html">Circuits</a></li>
-            <li><a href="../teams.html">Teams</a></li>
-            <li><a href="../drivers.html">Drivers</a></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#circuits">Circuits</a></li>
+            <li><a href="./drivers.html">Drivers</a></li>
+            <li><a href="./big-home.html">Project Hub</a></li>
         </ul>
     </nav>
+    <div class="F1-Hero-page">
+        <div class="hero-img">
+            <img src="../src/POSTER-F1.png" alt="F1 poster 1">
+        </div>
+
+        <div class="hero-img">
+            <img src="../src/POSTER-F1-2.png" alt="F1 poster 2">
+        </div>
+
+        <div class="hero-img">
+            <img src="../src/POSTER-F1-3.png" alt="F1 poster 3">
+        </div>
+    </div>
 
     <main>
-        <h2>Introduction to Formula 1</h2>
+        <section id="intro">
+            <h2>Introduction to Formula 1</h2>
+
             <p>
-                Formula 1, also called F1, is the highest class of international open-wheel racing. It is
-                governed by the Fédération Internationale de l'Automobile (FIA) and follows a strict set of
-                technical and sporting rules. F1 is not only about racing fast. It is also about designing the
-                most efficient car, building the best race strategy, and performing under extreme pressure.
+            Formula 1, also called F1, is the highest class of international open-wheel
+            racing. It is governed by the Fédération Internationale de l'Automobile (FIA)
+            and follows a strict set of technical and sporting rules. F1 is not only about
+            racing fast. It is also about designing the most efficient car, building the
+            best race strategy, and performing under extreme pressure.
+           </p>
+            <p>
+                The sport travels around the world and brings together drivers, engineers,
+                team principals, and millions of fans. Because of this, Formula 1 has become
+                both a motorsport competition and a global cultural event.
+            </p>
+            <img src="../src/f1-25.jpg" alt="F1-Racing">
+            <p>
+                Every race weekend is a battle fought on multiple fronts. While drivers push
+                the limits of human reaction and physical endurance at speeds exceeding
+                300 km/h, hundreds of engineers work behind the scenes analyzing real-time
+                data, adjusting strategies, and making split-second decisions that can determine
+                the outcome of a race. A single pit stop, a change in weather, or a safety car
+                period can completely transform the order of a Grand Prix.
             </p>
             <p>
-                The sport travels around the world and brings together drivers, engineers, team principals,
-                and millions of fans. Because of this, Formula 1 has become both a motorsport competition and
-                a global cultural event.
+                Formula 1 is also a sport defined by its relentless pursuit of innovation.
+                Technologies developed for F1 cars — from advanced aerodynamics and hybrid
+                power systems to carbon fiber construction and tire compounds — have directly
+                influenced the development of road cars and broader engineering industries.
+                In this sense, Formula 1 is not just a race series. It is one of the world's
+                most intense laboratories for human and mechanical performance.
             </p>
-        <img src="../src/f1-25-878d7.jpg" alt="F1-Racing">
-        <h2>Technical Philosophy</h2>
+        </section>
 
-            <h3>Aerodynamics and Downforce</h3>
-            <p><strong>Identity:</strong> Efficiency, physics, and innovation.</p>
+        <section id="history">
+            <h3>History of Formula 1</h3>
+            <img src="../src/HS.png" alt="F1-history">
             <p>
-                Formula 1 cars are shaped to produce massive downforce. This pushes the car into the track
-                and allows drivers to corner at very high speeds. In simple terms, the car works like an
-                upside-down airplane wing. Good aerodynamic design helps with stability, cornering speed,
-                and overall race pace.
+                The official Formula 1 World Championship began in 1950. Over time, the sport changed through
+                major technical eras, including lighter chassis designs, ground-effect aerodynamics, turbo engines,
+                and modern hybrid systems. Each period introduced new ideas and changed how teams approached speed,
+                safety, and performance.
             </p>
-
-            <h3>The Power Unit</h3>
-            <p><strong>Identity:</strong> Power, sustainability, and complexity.</p>
             <p>
-                Modern F1 cars use 1.6-liter V6 turbo-hybrid power units. These engines are extremely
-                advanced and are known for their high thermal efficiency. F1 is therefore not only about
-                raw speed, but also about energy recovery, fuel use, and smart engineering.
+                Because of this long history, F1 is not only a current competition but also an archive of racing
+                innovation. Many of its design ideas later influenced road-car technology and wider engineering culture.
             </p>
+        </section>
 
-        <h2>Legends of the Grid</h2>
 
-            <h3>Lewis Hamilton</h3>
-            <p><strong>Status:</strong> One of the most successful drivers in Formula 1 history.</p>
-            <p><strong>Style:</strong> Strong race management, smooth control, and excellent wet-weather driving.</p>
+        <section id="technical">
+            <h2>Technical Philosophy</h2>
+
+                <h3>Aerodynamics and Downforce</h3>
+                <img src="../src/DF.png" alt="Aerodynamics and Downforce">
+                <p><strong>Identity:</strong> Efficiency, physics, and innovation.</p>
+                <p>
+                    Formula 1 cars are shaped to produce massive downforce. This pushes the car into the track
+                    and allows drivers to corner at very high speeds. In simple terms, the car works like an
+                    upside-down airplane wing. Good aerodynamic design helps with stability, cornering speed,
+                    and overall race pace.
+                </p>
+
+                <h3>The Power Unit</h3>
+                <img src="../src/GP2-engine.jpg" alt="F1- V6-engine">
+                <p><strong>Identity:</strong> Power, sustainability, and complexity.</p>
+                <p>
+                    Modern F1 cars use 1.6-liter V6 turbo-hybrid power units. These engines are extremely
+                    advanced and are known for their high thermal efficiency. F1 is therefore not only about
+                    raw speed, but also about energy recovery, fuel use, and smart engineering.
+                </p>
             <p>
-                Lewis Hamilton is widely recognized for his consistency, speed, and ability to perform in
-                difficult race situations. His long career and record-level achievements made him one of the
-                defining figures of the modern era.
+                For 2026, Formula 1 introduced a completely new generation of power units
+                that marks the biggest technical shift since the hybrid era began in 2014.
+                The core 1.6-liter V6 turbocharged engine remains, but the electrical side
+                has been dramatically upgraded. The electric motor now contributes roughly
+                50 percent of the total power output — nearly three times more than before —
+                creating a true 50/50 split between combustion and electrical energy.
             </p>
-
-            <h3>Max Verstappen</h3>
-            <p><strong>Status:</strong> One of the leading drivers of the new generation.</p>
-            <p><strong>Style:</strong> Aggressive, fearless, and confident at the limit.</p>
+            <img src="../src/SHIT-RULE.jpeg" alt="F1-engine for 2026">
             <p>
-                Max Verstappen became known for his natural speed and direct racing style. He represents a
-                more modern and highly competitive version of Formula 1, where precision and mental strength
-                are both essential.
+                The MGU-H, a heat recovery system that had been part of F1 engines since
+                2014, has been removed. In its place, the MGU-K now delivers up to 470 bhp
+                of electrical power, up from just 160 bhp previously.  The cars also run
+                on fully sustainable fuel for the first time, reflecting Formula 1's
+                commitment to a greener future. Five manufacturers — Ferrari, Mercedes,
+                Honda, Audi, and Red Bull Powertrains in partnership with Ford — are
+                supplying these next-generation power units, making 2026 one of the most
+                competitive engine battles in the sport's history.
             </p>
+        </section>
 
-            <h3>Ayrton Senna</h3>
-            <p><strong>Status:</strong> One of the most iconic names in motorsport history.</p>
-            <p><strong>Style:</strong> Exceptional qualifying speed and deep emotional intensity.</p>
-            <p>
-                Ayrton Senna remains a symbol of raw talent and commitment. He is especially remembered for
-                his performances in qualifying and for his extraordinary skill in difficult track conditions.
-            </p>
+        <section id="legends">
+            <h2>Legends of the Grid</h2>
 
-        <h2>History of Formula 1</h2>
-        <p>
-            The official Formula 1 World Championship began in 1950. Over time, the sport changed through
-            major technical eras, including lighter chassis designs, ground-effect aerodynamics, turbo engines,
-            and modern hybrid systems. Each period introduced new ideas and changed how teams approached speed,
-            safety, and performance.
-        </p>
-        <p>
-            Because of this long history, F1 is not only a current competition but also an archive of racing
-            innovation. Many of its design ideas later influenced road-car technology and wider engineering culture.
-        </p>
+                <article>
+                    <img src="../src/LH.jpg" alt="Lewis Hamilton">
+                    <h3>Lewis Hamilton</h3>
+                    <p><strong>Status:</strong> One of the most successful drivers in Formula 1 history.</p>
+                    <p><strong>Style:</strong> Strong race management, smooth control, and excellent wet-weather driving.</p>
+                    <p>
+                        Lewis Hamilton is widely recognized for his consistency, speed, and ability to perform in
+                        difficult race situations. His long career and record-level achievements made him one of the
+                        defining figures of the modern era.
+                    </p>
+                </article>
+
+                <article>
+                    <img src="../src/MV.jpg" alt="Max Verstappen">
+                    <h3>Max Verstappen</h3>
+                    <p><strong>Status:</strong> One of the leading drivers of the new generation.</p>
+                    <p><strong>Style:</strong> Aggressive, fearless, and confident at the limit.</p>
+                    <p>
+                        Max Verstappen became known for his natural speed and direct racing style. He represents a
+                        more modern and highly competitive version of Formula 1, where precision and mental strength
+                        are both essential.
+                    </p>
+                </article>
+
+                <article>
+                    <img src="../src/MS.jpg" alt="Michael Schumacher">
+                    <h3>Michael Schumacher</h3>
+                    <p><strong>Status:</strong> One of the greatest Formula 1 drivers of all time, with seven World Championship titles.</p>
+                    <p><strong>Style:</strong> Relentless determination, precise technical feedback, and ruthless race craft.</p>
+                    <p>Michael Schumacher redefined what was possible in Formula 1. His dominance with Ferrari in the early 2000s remains one of the most remarkable periods in the sport's history, combining raw speed with unmatched consistency and engineering insight.</p>
+                </article>
+        </section>
+
+        <section id="circuits">
+            <h2>Famous Circuits</h2>
+
+                <h3>Monaco Grand Prix</h3>
+                     <img src="../src/Mono.png" alt="Monaco">
+                <p>
+                    The Monaco street circuit is one of the most iconic and challenging tracks in Formula 1.
+                    Its narrow roads, tight corners, and unforgiving barriers demand maximum precision from drivers,
+                    making it a true test of skill and bravery.
+                </p>
+                 <h3>Shanghai International Circuit</h3>
+                    <img src="../src/Shanghai.png" alt="Shanghai">
+                <p>
+                    Built in just 18 months on former swampland at a cost of $450 million,
+                    the Shanghai International Circuit was the most expensive Formula 1 facility
+                    ever constructed at the time of its opening in 2004. Designed by Hermann Tilke,
+                    the track layout is inspired by the Chinese character "上" (shang), meaning
+                    "above" or "ascend." It features one of the longest straights on the F1 calendar
+                    at 1.2 km and can accommodate up to 200,000 spectators.
+                 </p>
+
+                <h3>Silverstone</h3>
+                     <img src="../src/ST.png" alt="Silverstone">
+                <p>
+                    Silverstone is the home of British motorsport and one of the fastest circuits on the calendar.
+                    Its high-speed corners and rich history make it a favourite among drivers and fans alike,
+                    with a passionate crowd that creates an electric atmosphere on race day.
+                </p>
+
+                <h3>Suzuka</h3>
+                     <img src="../src/suzuka.png" alt="Suzuka">
+                <p>
+                    Suzuka is a technically demanding circuit in Japan, famous for its figure-eight layout
+                    and challenging corners such as the 130R and Spoon Curve. It is widely regarded as one of
+                    the greatest drivers' circuits in the world.
+                </p>
+        </section>
 
         <h2>The Grand Prix Weekend</h2>
         <p>
@@ -115,39 +238,46 @@
             tire strategy, and teamwork all play important roles throughout the weekend.
         </p>
 
-        <h2>Advanced Racing Technology</h2>
+        <section id="technology">
+            <h2>Advanced Racing Technology</h2>
 
-            <h3>DRS</h3>
+                <h3>Active　Aero　Mode</h3>
+                    <img src="../src/AAC.png" alt="Suzuka">
+                <p>
+                    The Drag Reduction System, or DRS, is designed to help overtaking. It changes the rear wing
+                    position to reduce drag and improve straight-line speed in specific situations.
+                </p>
+
+                <h3>Carbon Fiber Construction</h3>
+                     <img src="../src/CH.jpg" alt="Carbon Fiber">
+                <p>
+                    Formula 1 cars use lightweight carbon fiber structures. This material gives the car both low
+                    weight and very strong crash protection, which is essential in such a high-speed sport.
+                </p>
+
+                <h3>Telemetry and Data</h3>
+                     <img src="../src/TD.png" alt="Telemetry">
+                <p>
+                    Teams collect huge amounts of data from sensors on the car. Engineers use this telemetry to
+                    study tire wear, fuel use, pace, and car behavior. This makes Formula 1 one of the most data-driven
+                    sports in the world.
+                </p>
+        </section>
+
+        <section id="current">
+            <h2>Current Drivers and Teams</h2>
             <p>
-                The Drag Reduction System, or DRS, is designed to help overtaking. It changes the rear wing
-                position to reduce drag and improve straight-line speed in specific situations.
+                Formula 1 changes every season, with different drivers, teams, and competitive storylines. The
+                2026 driver lineup shown in your source materials includes names such as George Russell, Kimi Antonelli,
+                Charles Leclerc, Lewis Hamilton, Lando Norris, Oscar Piastri, Max Verstappen, and Fernando Alonso,
+                along with drivers from teams such as Mercedes, Ferrari, McLaren, Red Bull Racing, Williams, Aston Martin,
+                Alpine, Audi, Cadillac, Haas, and Racing Bulls.
             </p>
-
-            <h3>Carbon Fiber Construction</h3>
             <p>
-                Formula 1 cars use lightweight carbon fiber structures. This material gives the car both low
-                weight and very strong crash protection, which is essential in such a high-speed sport.
+                This variety of teams and personalities is part of what makes Formula 1 so interesting. Fans do not
+                only follow race results. They also follow team identity, driver rivalries, transfers, and technical progress.
             </p>
-
-            <h3>Telemetry and Data</h3>
-            <p>
-                Teams collect huge amounts of data from sensors on the car. Engineers use this telemetry to
-                study tire wear, fuel use, pace, and car behavior. This makes Formula 1 one of the most data-driven
-                sports in the world.
-            </p>
-
-        <h2>Current Drivers and Teams</h2>
-        <p>
-            Formula 1 changes every season, with different drivers, teams, and competitive storylines. The
-            2026 driver lineup shown in your source materials includes names such as George Russell, Kimi Antonelli,
-            Charles Leclerc, Lewis Hamilton, Lando Norris, Oscar Piastri, Max Verstappen, and Fernando Alonso,
-            along with drivers from teams such as Mercedes, Ferrari, McLaren, Red Bull Racing, Williams, Aston Martin,
-            Alpine, Audi, Cadillac, Haas, and Racing Bulls.
-        </p>
-        <p>
-            This variety of teams and personalities is part of what makes Formula 1 so interesting. Fans do not
-            only follow race results. They also follow team identity, driver rivalries, transfers, and technical progress.
-        </p>
+        </section>
 
         <h2>Why Formula 1 Matters</h2>
         <p>
@@ -162,12 +292,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Formula 1 Project Page</p>
-        <p>This page is part of a CS103 final project website.</p>
+        <a href="#page-header">scroll back to top.</a>
+        <p> &#169; 2026 Formula 1 Project Page</p>
+        <p>2026 Siyu Yang. All Right Reserved to <a href="#">Credit</a></p>
     </footer>
 </div>
 
-<script src="../02-js/yss.js"></script>
+<script src="yss.js"></script>
 </body>
 
 </html>
