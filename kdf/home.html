@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valorant Homepage</title>
+    <link type="text/css" rel="stylesheet" href="homepage.css">
+</head>
+<body>
 
+<header id="page-header">
+
+
+    <div class="header-text">
+        <h1>Valorant Esports: Teams and Players</h1>
+        <p>
+            Valorant esports showcases top teams and skilled players from around the world,
+            combining strategy, teamwork, and precise mechanics in competitive gameplay.
+        </p>
+    </div>
+
+
+    <nav>
+        <div class="logo">
+            <h1>VALORANT</h1>
+        </div>
+
+        <div class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="#about">Game Info</a>
+            <a href="#events">Esports</a>
+            <a href="../info/info.html">Teams & Players</a>
+            <a href="#kda">KDA Calculator</a>
+        </div>
+    </nav>
+
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <p class="small-title">TACTICAL SHOOTER / GLOBAL ESPORTS</p>
+            <h2>Precision, Strategy, and Teamwork</h2>
+            <p>
+                Valorant is a 5v5 tactical first-person shooter developed by Riot Games.
+                It combines accurate gunplay with unique agent abilities, so players need
+                both individual skill and strong teamwork.
+            </p>
+            <p>
+                In every match, one team attacks and tries to plant the spike, while the
+                other team defends and tries to stop them. Because every round can change
+                very quickly, timing, communication, map control, and decision-making are
+                all important.
+            </p>
+            <p>
+                Valorant is also one of the biggest modern esports titles. Professional
+                teams from the Americas, EMEA, Pacific, and China compete through the
+                VALORANT Champions Tour, which gives the game a strong global competitive scene.
+            </p>
+            <a href="../info/info.html" >View Teams & Players</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="../src/11.jpeg" alt="Valorant promotional image">
+        </div>
+    </section>
+
+    <!-- id 用来nav导航跳转，class用来css修饰 -->
+    <!-- section加id用来跳转，加class用于css修饰，主要作用为分区分板块 -->
+    <!-- section is used to divide the page into content sections -->
+    <!-- id is used for navigation -->
+    <!-- class is used for styling with CSS -->
+
+    <section id="about" class="about-section">
+        <h2>Why Valorant Is Special</h2>
+        <!-- Use a container class to group the three article boxes -->
+        <!-- 使用一个容器 class 来统一组织这三个 article（box） -->
+        <div class="about-boxes">
+            <article class="box">
+                <h3>Accurate Shooting</h3>
+                <p>
+                    Valorant rewards precise aim, fast reaction time, and strong mechanical control.
+                    Every shot carries weight, and a single mistake can decide the outcome of a round.
+                    Because of this, players must stay focused, manage recoil, and make every movement with intention.
+                </p>
+            </article>
+
+            <article class="box">
+                <h3>Agent Abilities</h3>
+                <p>
+                    Each agent in Valorant is designed with a unique set of abilities that shape how the game is played.
+                    These abilities create different strategies and allow teams to approach each round in multiple ways.
+                </p>
+            </article>
+
+            <article class="box">
+                <h3>Competitive Esports</h3>
+                <p>
+                    Valorant has developed a strong international esports system through the Valorant Champions Tour (VCT).
+                    Professional teams compete across regional leagues and global tournaments, creating a highly competitive environment.
+
+                    These events attract a global audience and highlight the highest level of gameplay, strategy, and teamwork in the game.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="events" class="events-section">
+        <h2>Latest Esports Events</h2>
+        <p class="events-intro">
+            The 2026 VALORANT Champions Tour (VCT) season features a series of regional competitions and major international events. These tournaments bring together top teams from around the world and determine qualification for global championships.
+
+            Each stage is important, as teams compete for standings, international qualification, and championship points. The structure creates a competitive environment where performance, consistency, and teamwork are essential.
+        </p>
+
+        <div class="event-cards">
+            <article class="event-card">
+                <img src="../src/stage1.jpeg" alt="VCT Americas 2026 Stage 1 image">
+                <div class="event-content">
+                    <h3>VCT Americas 2026 Stage 1</h3>
+                    <p>
+                        VCT Americas Stage 1 began on April 10, 2026, featuring top teams from the Americas region. The tournament is divided into two groups of six teams, where each team competes in a single round-robin format.
+
+                        After the group stage, the top teams advance to a double-elimination playoff bracket. The strongest teams from this stage earn qualification for Masters London, making every match critical for progression.
+
+                        This stage highlights regional competition, strategic depth, and team coordination at a high level.
+                    </p>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <img src="../src/Masterlondon.jpeg" alt="Masters Santiago 2026 image">
+                <div class="event-content">
+                    <h3>Masters Santiago 2026</h3>
+                    <p>
+                        Masters Santiago 2026 is one of the major international events in the VCT season. The tournament will take place in Santiago, Chile, bringing together top teams from around the world.
+
+                        It features qualified teams from major regions, including the Americas, EMEA, Pacific, and China. These teams compete for international recognition and important championship points.
+
+                        As a global event, Masters Santiago highlights the highest level of professional VALORANT. It showcases different playstyles, strong team coordination, and high-level strategic execution.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="kda" class="content-section">
+        <h2>KDA Calculator</h2>
+        <p>Enter your stats to calculate your KDA.</p>
+
+        <label>KILLS:</label>
+        <input type="number" id="kills">
+
+        <label>DEATHS:</label>
+        <input type="number" id="deaths">
+
+        <label>ASSISTS:</label>
+        <input type="number" id="assists">
+
+        <button onclick="calculate()">LETS SEE WHAT YOU GOT!</button>
+
+        <p id="result"></p>
+    </section>
+</main>
+
+<footer>
+    <p>&#169; 2026 Valorant Project</p>
+    <p>2026 Chase Ke. All Rights Reserved.</p>
+</footer>
+
+<script src="homepage.js"></script>
+
+</body>
+</html>
