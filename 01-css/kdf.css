@@ -1,127 +1,294 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Set global font, background color, and text color */
+/* 设置整个页面的字体、背景和文字颜色 */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0f0f1a;
-    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    /* Improve readability */
+    /* 增加行距，让文字更好读 */
     line-height: 1.6;
 }
 
-header {
-    background: #1a0a2e;
-    color: #fff;
-    padding: 2rem 6vw 1.5rem;
-    border-bottom: 3px solid #ff4655;
-}
-
-header h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: #ff4655;
-}
-
-header p {
-    font-size: 1rem;
-    color: #bbb;
-}
-
 nav {
-    background: #1a0a2e;
-    padding: 0 4vw;
-    border-bottom: 2px solid #333;
-}
-
-nav ul {
-    list-style: none;
+    /* Use flexbox to arrange items horizontally */
+    /* 用flex让内容横向排列 */
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    /* Space between logo and links */
+    /* 左右分开（logo左，导航右） */
+    justify-content: space-between;
+    /* Align items vertically center */
+    /* 垂直居中 */
+    align-items: center;
+    background-color: black;
+    /* Add space inside nav */
+    /* 内边距，让内容不贴边 */
+    padding: 18px 40px;
 }
 
-nav a {
-    display: block;
-    color: #ccc;
+/* Style the logo text */
+.logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+/* Style the links in navigation bar */
+.nav-links a {
+    color: white;
+    /* Remove underline */
+    /* 去掉下划线 */
     text-decoration: none;
-    padding: 0.9rem 1rem;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    transition: color 0.2s ease;
+    /* Space between links */
+    /* 每个链接之间的间距 */
+    margin-left: 24px;
+    font-size: 15px;
 }
 
-nav a:hover {
-    color: #ff4655;
+
+.hero {
+    display: flex;
+    /* 左边元素最左边，右边元素最右边*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 80px;
+    background-color: white;
 }
 
-main {
+/* Control width of left text area */
+/* 控制左边文字区域宽度 */
+.hero-text {
+    width: 55%;
+}
+
+.small-title {
+    font-size: 14px;
+    /* Bold text */
+    /* 加粗 */
+    font-weight: bold;
+    color: red;
+    margin-bottom: 12px;
+}
+
+.hero-text h2 {
+    font-size: 52px;
+    /* Tight line spacing for big titles */
+    /* 行距更紧凑 */
+    line-height: 1.1;
+    /* 在元素“下面”留出 20px 的外部空间 */
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+.hero-text a {
+    margin-top: 10px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.hero-image {
+    width: 40%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.about-section {
+    padding: 60px 80px;
+    background-color: white;
+}
+
+.about-section h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+/* 用flex让里面的article（box）变成横向排列*/
+.about-boxes {
+    display: flex;
+    /* 把一行里的元素拉开：第一个在最左，最后一个在最右，中间均匀分开*/
+    /* Place the first item on the left and the last item on the right, with equal space between */
+    justify-content: space-between;
+}
+.box {
+    width: 32%;
+    background-color: antiquewhite;
+    padding: 25px;
+}
+
+.box h3 {
+    margin-bottom: 14px;
+    font-size: 22px;
+}
+
+.events-section {
+    padding: 60px 80px 80px 80px;
+    background-color: white;
+}
+
+.events-section h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.events-intro {
     max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    margin-bottom: 30px;
+    font-size: 17px;
 }
 
-main h2 {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin: 1.8rem 0 0.8rem;
-    padding: 0.6rem 0.9rem;
-    background: #ff4655;
-    color: #fff;
-    display: inline-block;
+.event-cards {
+    display: flex;
+
 }
 
-main h3 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin: 1rem 0 0.3rem;
-    padding-left: 0.7rem;
-    border-left: 6px solid #ff4655;
-    color: #fff;
+.event-card {
+    width: 50%;
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
 }
 
-main p {
-    font-size: 1rem;
-    margin-bottom: 0.8rem;
-    max-width: 70ch;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.7rem 0.9rem;
-}
-
-main img {
-    max-width: 100%;
-    height: auto;
-    border: 3px solid #ff4655;
+.event-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    background-color: #e0e0e0;
     display: block;
-    margin: 1rem 0;
 }
 
-article {
-    margin-bottom: 1.5rem;
+.event-content {
+    padding: 22px;
 }
 
-figure {
-    margin: 0.8rem 0;
-}
-
-figcaption {
-    font-size: 0.85rem;
-    color: #999;
-    margin-top: 0.3rem;
+.event-content h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
 }
 
 footer {
-    background: #0a0a12;
-    color: #888;
     text-align: center;
-    padding: 1.2rem 6vw;
-    margin-top: 3rem;
-    border-top: 3px solid #ff4655;
-    font-size: 0.9rem;
+    padding: 20px;
+    background-color: black;
+    color: white;
 }
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .about-boxes,
+    .event-cards {
+        flex-direction: column;
+    }
+
+    .box,
+    .event-card {
+        width: 100%;
+    }
+
+    .about-section,
+    .events-section {
+        padding: 50px 30px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+#page-header {
+    background-color: #ff4655;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header-text {
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+.header-text h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.header-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#kda {
+    background-color: #ff4655;
+    color: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+
+}
+
+#kda label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#kda input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#kda button {
+    margin-top: 10px;
+    background-color: yellow;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
