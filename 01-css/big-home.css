@@ -24,9 +24,15 @@
 }
 
 /* =============================================
-   default setting
+   DEFAULT SETTING
    ============================================= */
+
 * {
+    /* Some CSS properties in this file were learned outside class from online tutorials and documentation,
+       including https://www.runoob.com and MDN Web Docs.
+
+       I used these sources when I wanted to make the layout cleaner and understand how real websites organize CSS.
+       My takeaway is that basic CSS properties control appearance, but layout-related properties control how users experience the page. */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,7 +40,7 @@
     /*font setting for all context*/
     font-style: normal;
     font-weight: normal;
-    font-family: "KH Interference TRIAL","Formula1",Times,serif;
+    font-family: "KH Interference TRIAL",Formula1,"figtree",Times,serif;
     line-height: 1;
 }
 
@@ -42,6 +48,8 @@
    scrolling smooth effect
    ============================================= */
 html {
+    /* I learned scroll-behavior from online CSS tutorials.
+       I used it to make internal page jumps feel smoother instead of suddenly jumping. */
     scroll-behavior: smooth;
 }
 
@@ -49,11 +57,16 @@ html {
    BASE
    ============================================= */
 body {
+    /* I use body as the main page container.
+       The flex-direction column helps the page stack from header to footer vertically. */
     background: #111111;
     color: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 img {
@@ -63,8 +76,12 @@ img {
 }
 
 #page-wrapper {
+    /* This wrapper holds the whole visible page.
+       I use flex here so main content can grow and push the footer toward the bottom. */
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* =============================================
@@ -80,7 +97,7 @@ header h1 {
     font-size: 5.5vw;
     font-weight: 900;
     line-height: 1.05;
-    letter-spacing: 0.02em;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 19px;
@@ -99,8 +116,12 @@ header p {
    NAVIGATION  — sticky, horizontal
    ============================================= */
 nav {
+    /* I use this navigation section to keep the main links clear and easy to find.
+       The red bottom border separates the navigation from the rest of the page, so it does not look like it is accidentally attached to another section. */
     background: #111111;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 3px solid #e10600;
+    /* I learned position: sticky from online CSS tutorials when I was trying to keep the navigation visible while scrolling.
+       My takeaway is that sticky navigation improves user experience on a long page because users can still reach the links easily. */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -126,25 +147,29 @@ nav a {
     padding: 18px 26px;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 1px;
     font-weight: 600;
     border-bottom: 3px solid transparent;
 }
 
 nav a:hover {
-    border: 1px solid #14f3ad;
-    color: #ffffff;
+    /* I changed the hover border to only affect the bottom border instead of all sides.
+       This prevents small layout movement when hovering over navigation links. */
+    border-bottom: 3px solid #14f3ad;
+    color: #14f3ad;
 }
 
 /* =============================================
    FOOTER
    ============================================= */
 footer {
+    /* I use margin-top: auto with the page flex layout so the footer stays at the bottom.
+       My takeaway is that flexbox can control vertical page structure, not only horizontal layout. */
     background: #111111;
     border-top: 3px solid #e10600;
     text-align: center;
     padding: 40px 32px;
-    margin-top: 0;
+    margin-top: auto;
 }
 
 footer p {
@@ -160,6 +185,17 @@ footer a {
 
 footer a:hover {
     color: #14f3ad;
+}
+
+/* =============================================
+   MAIN CONTENT (base layout)
+   ============================================= */
+main {
+    /* This main section uses flex: 1 so it can take up remaining vertical space.
+       This helps keep the footer near the bottom when the page content is short. */
+    width: 85vw;
+    margin: 40px auto;
+    flex: 1;
 }
 
 /* =============================================
@@ -196,18 +232,11 @@ footer a:hover {
     main {
         width: 92vw;
         margin: 20px auto;
+        /* Note:
+           I learned the gap property from online CSS tutorials.
+           I used it to control spacing between elements instead of using extra <br> in HTML.
+           My takeaway is that gap is cleaner and easier for layout spacing. */
         gap: 16px;
-        /* the gap: **; is the same function just like <br> in the html i think we learned it
-        in the lecture but just in case i have to make a comment here for
-        somethings i can't be 100% sure we learned.'*/
-    }
-
-    .card {
-        padding: 18px;
-    }
-
-    .card a {
-        font-size: calc(16px + 0.2vw);
     }
 
     footer {
@@ -219,6 +248,5 @@ footer a:hover {
         font-size: 13px;
     }
 }
-
 
 
