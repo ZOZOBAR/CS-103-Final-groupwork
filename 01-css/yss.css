@@ -1,32 +1,10 @@
-@font-face {
-    font-family: "KH Interference TRIAL";
-    src: url('../fonts/KHInterferenceTRIAL-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "KH Interference TRIAL";
-    src: url('../fonts/KHInterferenceTRIAL-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: "KH Interference TRIAL";
-    src: url('../fonts/KHInterferenceTRIAL-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Formula1";
-    src: url('../fonts/Formula1 Display-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* =============================================
-   default setting
-   notice all the tings or attribution that we haven't covered were all learn from online tutorial video and
-    the font-end website called: https://www.runoob.com
+   DEFAULT SETTING
+   Some CSS properties in this file were learned outside class from online tutorials and documentation,
+   including https://www.runoob.com and MDN Web Docs.
+
+   I used these sources when I wanted to make the layout cleaner and understand how real websites organize CSS.
+   My takeaway is that basic CSS properties control appearance, but layout-related properties control how users experience the page.
    ============================================= */
 * {
     margin: 0;
@@ -38,6 +16,8 @@
     font-weight: normal;
     font-family: "KH Interference TRIAL",Formula1,"figtree",Times,serif;
     line-height: 1;
+    /* I used line-height to control vertical spacing between text lines.
+       I learned that a unitless line-height is commonly used in CSS, but here I mainly use it to make the starting layout tighter and more controlled. */
 }
 
 /* =============================================
@@ -48,10 +28,14 @@
 html {
     scroll-behavior: smooth;
 }
+
+
 /* =============================================
    Hero page effect below the nav section
    ============================================= */
 .F1-Hero-page {
+    /* Flexbox was covered in class.
+       I used it here to place the hero images next to each other in one row. */
     display: flex;
     width: 100%;
     height: 500px;
@@ -59,6 +43,9 @@ html {
 
 .hero-img {
     flex: 1;
+    /* I learned overflow: hidden from online CSS examples while working with image cropping.
+       It hides the part of an image that goes outside its container.
+       My takeaway is that it helps keep the hero section clean when images are cropped. */
     overflow: hidden;
 }
 
@@ -73,9 +60,8 @@ html {
     filter: brightness(70%);
 }
 
-
-
-/* main content */
+/* Paragraph base style:
+   I use this section to keep paragraph text consistent across the page. */
 p {
     font-family: 'Arial', 'Helvetica', sans-serif;
     font-size: 16px;
@@ -85,14 +71,7 @@ p {
 }
 
 
-/* Nav 导航 */
-nav a {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+
 /* =============================================
    INTRO OVERLAY  (JS-dependent — keep intact)
    ============================================= */
@@ -108,6 +87,14 @@ nav a {
     z-index: 9999;
     opacity: 1;
     transition: opacity 0.9s ease;
+
+    /* I learned inset: 0 from online CSS references.
+     It is a shorter way to set top, right, bottom, and left to 0.
+     I used it here so the intro overlay covers the full browser window. */
+
+    /* I learned z-index from online CSS tutorials while studying layer order.
+      I used a high z-index so the intro overlay appears above the normal page content.
+      My takeaway is that z-index controls which layer is visually on top. */
 }
 
 #intro-overlay > * {
@@ -152,6 +139,9 @@ nav a {
 #intro-overlay.fade-out {
     opacity: 0;
     pointer-events: none;
+    /* I learned pointer-events from MDN documentation.
+      I used it so the faded intro overlay will not block clicks after it becomes invisible.
+      My takeaway is that invisible elements can still block interaction unless pointer-events is controlled. */
 }
 
 /* =============================================
@@ -189,7 +179,7 @@ header h1 {
     font-size: 5.5vw;
     font-weight: 900;
     line-height: 1.05;
-    letter-spacing: 0.02em;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 19px;
@@ -203,13 +193,16 @@ header p {
     line-height: 1.9;
     color: #cccccc;
     letter-spacing: 0.3px;
+    /* I learned font-variant: small-caps from online CSS references while exploring typography styles.
+      I used it to make the header subtitle feel more formal and connected to the racing theme. */
 }
 
 /* =============================================
    NAVIGATION  — sticky, horizontal
    ============================================= */
 /* Note: I learned position: sticky from CSS documentation and examples while researching how to keep navigation visible during scrolling.
-   I used it here to keep the navigation at the top of the page. My takeaway is that sticky positioning is useful for usability because users can keep accessing links while moving through long pages. */
+   I used it here to keep the navigation at the top of the page. My takeaway is that sticky positioning is useful for usability because users
+   can keep accessing links while moving through long pages. */
 nav {
     background: #111111;
     border-bottom: 1px solid #2a2a2a;
@@ -238,10 +231,12 @@ nav a {
     padding: 18px 26px;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 1.5px;
     font-weight: 600;
     border-bottom: 3px solid transparent;
+    font-family: 'Arial', sans-serif;
 }
+
 
 nav a:hover {
     border-bottom: 3px solid #e10600;
@@ -301,86 +296,63 @@ main p {
     margin-bottom: 10px;
 }
 
-/* Note: Flexbox was covered in class. I first used flex here to place article cards in a responsive row that could wrap to the next line. */
+/* =============================================
+   DRIVER CARD SECTION
+   This section uses Flexbox to organize the driver cards.
+   I used Flexbox because it was covered in class and it lets the cards move to the next line when the screen becomes smaller.
+   ============================================= */
 #legends {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    justify-content: center;
+    /* I learned the gap property from online CSS tutorials while working with Flexbox.
+       I used it to control space between cards without adding extra margin to every article.
+       My takeaway is that gap makes spacing cleaner and easier to adjust. */
 }
 
 #legends h2 {
-    flex: 0 0 100%;
-}
-
-#legends article img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: top;
-    display: block;
-    margin-bottom: 16px;
-    border-bottom: 2px solid #e10600;
 }
 
-#legends article {
-    flex: 1 1 280px;
-    border-top: 4px solid #e10600;
-    border-left: none;
-    padding: 20px 24px;
-    background: #1a1a1a;
-}
-
-/*=============================================*/
-/** === Drivers Grid Layout === *!*/
-/*=============================================*/
-/* Note: I learned CSS Grid from outside class by reading CSS tutorials and reference pages while trying to organize the driver cards into cleaner columns.
-   I used grid-template-columns and grid-column here to control card alignment and section-title width. My takeaway is that Grid is useful when I want stronger row-and-column control than Flexbox gives me. */
-#legends {
-    /*here i grid all the article block */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-/* Driver Card */
-#legends article {
-    background: #1a1a1a;
-    padding: 20px;
-    border-top: 3px solid #e10600;
-    text-align: center;
-}
-
-/* Image */
-#legends img {
-    width: 100%;
-    /* I kept height:auto so the image ratio would stay natural when the width changes. This reinforced for me that responsive images should resize without distortion. */
-    height: auto;
-}
-
-/* Team title (key) */
 .team-title {
-    grid-column: 1 / -1;
+    width: 100%;
     margin: 30px 0 10px;
     color: #e10600;
     text-align: center;
 }
-/* img  */
-#legends article img {
-    display: block;
-    margin: 0 auto;
+
+#legends article {
+    width: 42%;
+    min-width: 260px;
+    border-top: 4px solid #e10600;
+    border-left: none;
+    padding: 20px 24px;
+    background: #1a1a1a;
+    text-align: center;
+
+    /* I learned min-width from online responsive design examples.
+      I used it to stop driver cards from becoming too narrow on medium-size screens.
+      My takeaway is that responsive design needs both flexible width and a minimum readable size. */
 }
 
-/* name */
+#legends article img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    margin: 0 auto 16px;
+    border-bottom: 2px solid #e10600;
+    /* I learned object-position from online CSS references while adjusting image cropping.
+      I used center top because I wanted the driver portraits to focus more on the upper part of the image.
+      My takeaway is that object-position works together with object-fit to control what part of the image is shown. */
+}
+
 #legends article h3 {
     text-align: center;
 }
 
-#legends h2 {
-    grid-column: 1 / -1;
-    align-self: start;
-}
-
-/* context of drive ） */
 #legends article p {
     text-align: center;
 }
@@ -394,6 +366,8 @@ main img {
     margin: 24px 0;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
     border: 1px solid #2a2a2a;
+    /* I learned rgba() from online CSS examples while working with transparent colors.
+       I used it here inside box-shadow so the shadow can be dark but still slightly transparent. */
 }
 
 /* =============================================
@@ -422,6 +396,7 @@ footer a:hover {
     color: #e10600;
 }
 
+
 /* =============================================
     Responsive design
    ============================================= */
@@ -430,7 +405,8 @@ footer a:hover {
     header h1 {
         line-height: 1;
     }
-
+    /* On small screens, I change the navigation direction so the links stack vertically.
+       This keeps the links readable and prevents them from squeezing into one long row. */
     nav ul {
         flex-direction: column;
         align-items: stretch;
@@ -459,7 +435,9 @@ footer a:hover {
     }
 
     #legends article {
-        flex: 0 0 100%;
+        width: 100%;
+        min-width: 0;
+        /* On small screens, each driver card takes the full width.
+        This makes the driver page easier to read on mobile devices. */
     }
 }
-
