@@ -23,230 +23,634 @@
     font-style: normal;
 }
 
-/* =============================================
-   DEFAULT SETTING
-   ============================================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS103 | Group Credits Page</title>
+  <link rel="stylesheet" href="./big-home.css">
+</head>
+<body>
+<div id="container">
+  <header>
+    <h1>Credits</h1>
+    <p>Sources and image attributions used in this website.</p>
+  </header>
 
-* {
-    /* Some CSS properties in this file were learned outside class from online tutorials and documentation,
-       including https://www.runoob.com and MDN Web Docs.
 
-       I used these sources when I wanted to make the layout cleaner and understand how real websites organize CSS.
-       My takeaway is that basic CSS properties control appearance, but layout-related properties control how users experience the page. */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  <nav>
+    <ul>
+      <li><a href="https://cs-people.bu.edu/xuqile/cs-103/projects/final-project/Introduction/Introduction.html">GP Moto</a></li>
+      <li><a href="https://cs-people.bu.edu/zozobar/cs-103/project/final/Siyu-Yang/home.html">Formula 1</a></li>
+      <li><a href="https://cs-people.bu.edu/hjj66/cs-103/lab/final/soccer.html">Soccer</a></li>
+      <li><a href="https://cs-people.bu.edu/haochenn/cs-103/projects/final/frank/frank.html">Tennis</a></li>
+      <li><a href="https://cs-people.bu.edu/kedifu74/cs-103/projects/final/homepage/homepage.html">Valorant</a></li>
+    </ul>
+  </nav>
 
-    /*font setting for all context*/
-    font-style: normal;
-    font-weight: normal;
-    font-family: "KH Interference TRIAL",Formula1,"figtree",Times,serif;
-    line-height: 1;
-}
 
-/* =============================================
-   scrolling smooth effect
-   ============================================= */
-html {
-    /* I learned scroll-behavior from online CSS tutorials.
-       I used it to make internal page jumps feel smoother instead of suddenly jumping. */
-    scroll-behavior: smooth;
-}
+  <main class="credits-main">
+    <section class="credit-section">
+      <h2>Soccer Sources</h2>
+      <ul>
+        <li>
+          <a href="https://carboncredits.com/fifa-world-cup-2026-ticket-frenzy-11b-payday-and-footballs-climate-test/">2026 FIFA WORLD CUP</a> © 2025 by <a href="https://carboncredits.com/author/jennifercarboncredits-com/">Jennifer L</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </li>
 
-/* =============================================
-   BASE
-   ============================================= */
-body {
-    /* I use body as the main page container.
-       The flex-direction column helps the page stack from header to footer vertically. */
-    background: #111111;
-    color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+        <li>
+          <a href="https://en.wikipedia.org/wiki/File:Real_Madrid_CF.svg" target="_blank">
+            Real Madrid CF Logo
+          </a> © by Wikipedia Contributors is licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
 
-#page-wrapper {
-    /* This wrapper holds the whole visible page.
-       I use flex here so main content can grow and push the footer toward the bottom. */
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
-/* =============================================
-   HEADER  — dark hero section
-   ============================================= */
-header {
-    background: #111111;
-    padding: 80px 6vw 64px;
-    border-bottom: 3px solid #e10600;
-}
+        <li>
+          <a href="https://en.wikipedia.org/wiki/FC_Barcelona" target="_blank">
+            FC Barcelona
+          </a> © by Wikipedia Contributors is licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
 
-header h1 {
-    font-size: 5.5vw;
-    font-weight: 900;
-    line-height: 1.05;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 19px;
-}
 
-/* Header subtitle */
-header p {
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    font-size: 16px;
-    line-height: 1.9;
-    color: #cccccc;
-    letter-spacing: 0.3px;
-}
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Liverpool_F.C." target="_blank">
+            Liverpool FC
+          </a> © by Wikipedia Contributors is licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
 
-/* =============================================
-   NAVIGATION  — sticky, horizontal
-   ============================================= */
-nav {
-    /* I use this navigation section to keep the main links clear and easy to find.
-       The red bottom border separates the navigation from the rest of the page, so it does not look like it is accidentally attached to another section. */
-    background: #111111;
-    border-bottom: 3px solid #e10600;
-    /* I learned position: sticky from online CSS tutorials when I was trying to keep the navigation visible while scrolling.
-       My takeaway is that sticky navigation improves user experience on a long page because users can still reach the links easily. */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+        <li>
+          <a href="https://www.si.com/soccer/lionel-messi-facts-amazing-things-you-didn-t-know-about-the-soccer-legend">Picture of Lionel Andrés Messi Cuccittini</a> © 2025 by <a href="https://www.si.com/soccer/lionel-messi-facts-amazing-things-you-didn-t-know-about-the-soccer-legend">Barnaby Lane</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </li>
 
-nav li {
-    margin: 0;
-}
 
-nav a {
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 18px 26px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    border-bottom: 3px solid transparent;
-}
+        <li>
+          <a href="https://www.cnn.com/2025/10/08/sport/soccer-cristiano-ronaldo-first-billionaire-intl">Picture of Cristiano Ronaldo dos Santos Aveiro.</a> © 2025 by <a href="https://www.franknunns.com/contact/">Frank Nunns O'Connell</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </li>
 
-nav a:hover {
-    /* I changed the hover border to only affect the bottom border instead of all sides.
-       This prevents small layout movement when hovering over navigation links. */
-    border-bottom: 3px solid #14f3ad;
-    color: #14f3ad;
-}
 
-/* =============================================
-   FOOTER
-   ============================================= */
-footer {
-    /* I use margin-top: auto with the page flex layout so the footer stays at the bottom.
-       My takeaway is that flexbox can control vertical page structure, not only horizontal layout. */
-    background: #111111;
-    border-top: 3px solid #e10600;
-    text-align: center;
-    padding: 40px 32px;
-    margin-top: auto;
-}
+        <li>
+          <a href="https://edition.cnn.com/2022/12/30/football/what-made-pele-great-spt-intl">Picture of Edson Arantes do Nascimento</a> © 2022 by <a href="https://www.cnn.com/profiles/ben-morse">Ben Morse, CNN</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </li>
 
-footer p {
-    color: #666666;
-    font-size: 14px;
-    line-height: 1.8;
-}
 
-footer a {
-    color: #cccccc;
-    text-decoration: none;
-}
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Diego_Maradona" target="_blank">
+            Diego Maradona
+          </a> © by Wikipedia Contributors is licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
+      </ul>
+    </section>
 
-footer a:hover {
-    color: #14f3ad;
-}
 
-/* =============================================
-   MAIN CONTENT (base layout)
-   ============================================= */
-main {
-    /* This main section uses flex: 1 so it can take up remaining vertical space.
-       This helps keep the footer near the bottom when the page content is short. */
-    width: 85vw;
-    margin: 40px auto;
-    flex: 1;
-}
+    <section class="credit-section">
+      <h2>MotoGP Sources</h2>
+      <ul>
+        <li>
+          <a href="https://resources.motogp.pulselive.com/photo-resources/2026/03/28/f6744834-5e1c-46ae-9b34-3b2731b8fb94/LG9_1279.jpg" target="_blank">
+            MotoGP Race Photo 1
+          </a> © MotoGP / Dorna Sports. All rights reserved.
+        </li>
 
-/* =============================================
-    Responsive design
-   ============================================= */
-@media screen and (max-width: 600px) {
-    header {
-        padding: 48px 20px 36px;
-        text-align: center;
-    }
 
-    header h1 {
-        font-size: calc(28px + 1vw);
-        line-height: 1.05;
-        margin-bottom: 12px;
-    }
+        <li>
+          <a href="https://resources.motogp.pulselive.com/photo-resources/2026/03/22/6b95bd50-665e-41ea-b065-46a7deb02dba/LG9_5536.jpg" target="_blank">
+            MotoGP Race Photo 2
+          </a> © MotoGP / Dorna Sports. All rights reserved.
+        </li>
 
-    header p {
-        font-size: calc(14px + 0.2vw);
-        line-height: 1.7;
-    }
 
-    nav ul {
-        flex-direction: column;
-        align-items: stretch;
-    }
+        <li>
+          <a href="https://resources.motogp.pulselive.com/photo-resources/2026/03/22/68267eed-87c5-4de2-9ecb-b2d74b31aa9a/DS_09436.jpg" target="_blank">
+            MotoGP Race Photo 3
+          </a> © MotoGP / Dorna Sports. All rights reserved.
+        </li>
 
-    nav a {
-        text-align: center;
-        padding: 16px 18px;
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
-    }
 
-    main {
-        width: 92vw;
-        margin: 20px auto;
-        /* Note:
-           I learned the gap property from online CSS tutorials.
-           I used it to control spacing between elements instead of using extra <br> in HTML.
-           My takeaway is that gap is cleaner and easier for layout spacing. */
-        gap: 16px;
-    }
+        <li>
+          <a href="https://commons.wikimedia.org/wiki/File:Valentino_Rossi_2017.jpg" target="_blank">
+            Valentino Rossi 2017
+          </a> © by Stefan Brending is licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en" target="_blank">CC BY-SA 3.0 DE</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
 
-    footer {
-        text-align: center;
-        padding: 28px 20px;
-    }
 
-    footer p {
-        font-size: 13px;
-    }
-}
+        <li>
+          <a href="https://resources.motogp.pulselive.com/photo-resources/2026/04/01/8027468c-a966-4c58-ad26-17b68bb807b8/gItv2nNj.png" target="_blank">
+            MotoGP Race Photo 4
+          </a> © MotoGP / Dorna Sports. All rights reserved.
+        </li>
 
+
+        <li>
+          <a href="https://w0.peakpx.com/wallpaper/477/334/HD-wallpaper-jorge-lorenzo-moto-gp-racing.jpg" target="_blank">
+            Jorge Lorenzo MotoGP Wallpaper
+          </a> © Peakpx. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://commons.wikimedia.org/wiki/File:Casey_Stoner_photo_2011.jpg" target="_blank">
+            Casey Stoner Photo 2011
+          </a> © by Box Repsol is licensed under
+          <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
+      </ul>
+    </section>
+
+
+    <!--
+      Formula 1 credit format: https://www.formula1.com/en/information/legal-notices.7egvZU48hzrypubGBNcQKt
+      For the Formula 1 section, I used a clearer attribution format because many F1-related images
+      come from official team websites, Formula 1 media pages, or other copyrighted motorsport sources.
+      I wrote each credit as "Image source," followed by "Used for educational purposes only" and
+      "All rights belong to the original owner" to avoid suggesting that the images belong to our group.
+      This format is meant to respect Formula 1 / team copyright ownership while explaining that the images
+      are only used in this non-commercial class project.
+    -->
+    <section class="credit-section">
+      <h2>Formula 1 Sources</h2>
+      <ul>
+        <li>
+          <a href="https://the-race.com/formula-1/" target="_blank">
+            F1 Front Wing Diagram
+          </a><br>
+          Image source: The Race. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com" target="_blank">
+            F1 Chassis Structure
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://medium.com" target="_blank">
+            Aerodynamic Forces Diagram
+          </a><br>
+          Image source: Myroslav Tsyupka / Medium. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com" target="_blank">
+            F1 Engine Close-up
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/lewis-hamilton.html" target="_blank">
+            Lewis Hamilton Portrait
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.ferrari.com" target="_blank">
+            Michael Schumacher Portrait
+          </a><br>
+          Image source: Ferrari Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.redbullracing.com" target="_blank">
+            Max Verstappen Celebration
+          </a><br>
+          Image source: Red Bull Racing. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/racing/2024/china.html" target="_blank">
+            Shanghai Grand Prix Race
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/latest/article" target="_blank">
+            2022 vs 2026 Engine Diagram
+          </a><br>
+          Image source: Formula 1 Technical Analysis. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/racing/2024/japan.html" target="_blank">
+            Suzuka Circuit Race
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://aws.amazon.com/f1/" target="_blank">
+            Monza Qualifying Analysis Graphic
+          </a><br>
+          Image source: AWS / Formula 1. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/arvid-lindblad.html" target="_blank">
+            Arvid Lindblad Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/charles-leclerc.html" target="_blank">
+            Charles Leclerc Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/esteban-ocon.html" target="_blank">
+            Esteban Ocon Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/fernando-alonso.html" target="_blank">
+            Fernando Alonso Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/franco-colapinto.html" target="_blank">
+            Franco Colapinto Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/george-russell.html" target="_blank">
+            George Russell Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Used for educational purposes only. All rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/lewis-hamilton.html" target="_blank">
+            Lewis Hamilton Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Used for educational purposes only. All rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/max-verstappen.html" target="_blank">
+            Max Verstappen Driver Image
+          </a><br>
+          Image source: Red Bull Racing. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/nico-hulkenberg.html" target="_blank">
+            Nico Hulkenberg Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/oliver-bearman.html" target="_blank">
+            Oliver Bearman Driver Image
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/oscar-piastri.html" target="_blank">
+            Oscar Piastri Driver Image
+          </a><br>
+          Image source: McLaren Racing. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/pierre-gasly.html" target="_blank">
+            Pierre Gasly Driver Image
+          </a><br>
+          Image source: Alpine F1 Team. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="../src/POSTER-F1.png" target="_blank">
+          F1 Poster Design 1
+          </a>&#169; by Siyu Yang is licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
+
+
+
+        <li>
+          <a href="../src/POSTER-F1-2.png" target="_blank">
+          F1 Poster Design 2
+          </a>&#169; by Siyu Yang is licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
+
+
+        <li>
+          <a href="../src/POSTER-F1-3.png" target="_blank">
+          F1 Poster Design 3
+          </a> &#169; by Siyu Yang is licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="max-width:1em;max-height:1em;margin-left:.2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style="max-width:1em;max-height:1em;margin-left:.2em;">
+        </li>
+
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/alexander-albon.html" target="_blank">
+            Alexander Albon Driver Image
+          </a><br>
+          Image source: Williams Racing. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/carlos-sainz.html" target="_blank">
+            Carlos Sainz Driver Image
+          </a><br>
+          Image source: Williams Racing. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.ea.com/games/f1" target="_blank">
+            F1 25 Promotional Image
+          </a><br>
+          Image source: EA Sports. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/gabriel-bortoleto.html" target="_blank">
+            Gabriel Bortoleto Driver Image
+          </a><br>
+          Image source: Audi F1 Team. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/isack-hadjar.html" target="_blank">
+            Isack Hadjar Driver Image
+          </a><br>
+          Image source: Red Bull Racing. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/kimi-antonelli.html" target="_blank">
+            Kimi Antonelli Driver Image
+          </a><br>
+          Image source: Mercedes-AMG F1 Team. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/lance-stroll.html" target="_blank">
+            Lance Stroll Driver Image
+          </a><br>
+          Image source: Aston Martin F1 Team. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/lando-norris.html" target="_blank">
+            Lando Norris Driver Image
+          </a><br>
+          Image source: McLaren Racing. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/liam-lawson.html" target="_blank">
+            Liam Lawson Driver Image
+          </a><br>
+          Image source: Red Bull Racing. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com" target="_blank">
+            Monaco Grand Prix Image
+          </a><br>
+          Image source: Formula 1 Official Website. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/sergio-perez.html" target="_blank">
+            Sergio Perez Driver Image
+          </a><br>
+          Image source: Cadillac F1 Team. Educational use only. Rights belong to the original owner.
+        </li>
+
+
+        <li>
+          <a href="https://www.formula1.com/en/drivers/valtteri-bottas.html" target="_blank">
+            Valtteri Bottas Driver Image
+          </a><br>
+          Image source: Cadillac F1 Team. Educational use only. Rights belong to the original owner.
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="credit-section">
+      <h2>Tennis Sources</h2>
+      <ul>
+        <li>
+          <a href="https://www.nytimes.com/2025/05/19/nyregion/arthur-ashe-stadium-renovation.html" target="_blank">
+            US Open Stadium Renovation
+          </a> © The New York Times. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://www.nytimes.com/2024/08/22/sports/us-open-guide-tennis.html" target="_blank">
+            US Open Guide
+          </a> © The New York Times. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://www.usopen.org/en_US/news/articles/2023-09-10/novak_djokovic_wins_24th_grand_slam_singles_title_at_2023_us_open.html" target="_blank">
+            Novak Djokovic
+          </a> © US Open. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://www.usopen.org/en_US/news/articles/2018-07-18/50_for_50_rafael_nadal_2010_2012_and_2017_us_open_champion.html" target="_blank">
+            Rafael Nadal
+          </a> © US Open. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://bleacherreport.com/articles/2140826-why-roger-federers-5-consecutive-us-open-titles-is-an-unbreakable-record" target="_blank">
+            Roger Federer
+          </a> © Bleacher Report. All rights reserved.
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="credit-section">
+      <h2>Valorant Sources</h2>
+      <ul>
+        <li>
+          <a href="https://playvalorant.com/en-us/news/announcements/alpha-vs-omega-conflict-event/" target="_blank">
+            Valorant Work
+          </a> © Riot Games. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://valorantesports.com/en-US/news/vct-americas-2025-stage-1-everything-you-need-to-know" target="_blank">
+            VCT Americas Stage 1
+          </a> © Valorant Esports. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://x.com/ValorantEsports/status/2023790374712733946" target="_blank">
+            Masters Event Image
+          </a> © Valorant Esports. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://sentinels.gg/article/sentinels-to-field-victor-victor-wong-as-a-stand-in" target="_blank">
+            Sentinels Team
+          </a> © Sentinels. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://fnatic.com/esports/valorant" target="_blank">
+            Fnatic Team
+          </a> © Fnatic. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://pprx.team/media/pages/home/76565e187c-1773642266/2026-santiago-milestone-site-1440x.webp" target="_blank">
+            Paper Rex Team
+          </a> © Paper Rex. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://liquipedia.net/commons/images/e/e6/LOUD_at_the_VALORANT_Champions_2023.jpg" target="_blank">
+            LOUD Team
+          </a> © Liquipedia. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://www.redbull.com/us-en/athlete/tyson-tenz-ngo" target="_blank">
+            TenZ
+          </a> © Red Bull. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://liquipedia.net/commons/images/7/7b/FNC_Derke_at_VCT_Masters_Tokyo.jpg" target="_blank">
+            Derke
+          </a> © Liquipedia. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://liquipedia.net/commons/images/3/3b/MIBR_aspas_at_Valorant_Champions_-_Day_3.jpg" target="_blank">
+            Aspas
+          </a> © Liquipedia. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://liquipedia.net/commons/images/0/0f/Paper_Rex_Jinggg_at_VCT_Pacific_2026_Kickoff.jpg" target="_blank">
+            Jinggg
+          </a> © Liquipedia. All rights reserved.
+        </li>
+
+
+        <li>
+          <a href="https://liquipedia.net/commons/images/1/1c/EDG_ZmjjKK_at_VALORANT_Champions_2024.jpg" target="_blank">
+            Zmjjkk
+          </a> © Liquipedia. All rights reserved.
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="credit-section">
+      <h2>Note</h2>
+      <p>All images and references are credited to their original creators or publishers. This project is for educational purposes only.</p>
+    </section>
+  </main>
+
+
+  <footer>
+    <a href="https://cs-people.bu.edu/zozobar/cs-103/project/final/Siyu-Yang/big-home.html">back to Home Page.</a>
+    <p>&#169; 2026 CS-103 Group. All Rights Reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
 
