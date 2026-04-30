@@ -1,121 +1,192 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f0eb;
-    color: #111;
-    line-height: 1.6;
+    background-color: #111111;
+    color: white;
+    font-size: calc(2px + 1.1vw);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
 
 header {
-    background: #c0392b;
-    color: #fff;
-    padding: 2rem 6vw 1.5rem;
+    background-color: #c00000;
+    padding: 3%;
+    color: white;
+    border-bottom: 3px solid white;
 }
 
-header h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
+h1 {
+    font-size: calc(2px + 1.8vw);
+    margin-bottom: 1%;
+    letter-spacing: 1px;
 }
 
 header p {
-    font-size: 1rem;
-    color: #fdd;
+    font-size: calc(2px + 0.9vw);
+    margin-bottom: 1.5%;
+}
+
+button {
+    background-color: white;
+    color: #c00000;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    font-size: calc(2px + 0.8vw);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
 }
 
 nav {
-    background: #222;
-    padding: 0 4vw;
+    background-color: #1a1a1a;
+    padding: 2%;
+    text-align: center;
+    border-bottom: 2px solid #555555;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 2%;
 }
 
 nav a {
-    display: block;
-    color: #fff;
+    color: white;
     text-decoration: none;
-    padding: 0.9rem 1rem;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    transition: background 0.2s ease;
 }
 
 nav a:hover {
-    background: #c0392b;
+    text-decoration: underline;
 }
 
 main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    width: 75vw;
+    margin: 2% auto;
 }
 
-main h2 {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin: 1.8rem 0 0.8rem;
-    padding: 0.6rem 0.9rem;
-    background: #c0392b;
-    color: #fff;
-    display: inline-block;
+section {
+    background-color: #1e1e1e;
+    padding: 2.5%;
+    margin-bottom: 2%;
+    border: 2px solid #333333;
+    border-radius: 10px;
 }
 
-main h3 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin: 1rem 0 0.3rem;
-    padding-left: 0.7rem;
-    border-left: 6px solid #c0392b;
+h2 {
+    margin-bottom: 2%;
+    color: #ff4d4d;
+    border-bottom: 1px solid #555555;
+    padding-bottom: 1%;
 }
 
-main p {
-    font-size: 1rem;
-    margin-bottom: 0.8rem;
-    max-width: 70ch;
+p {
+    margin-bottom: 2%;
 }
 
-main img {
-    max-width: 100%;
-    height: auto;
-    border: 4px solid #c0392b;
+img {
+    max-width: 35%;
     display: block;
-    margin: 1rem 0;
+    margin: 1.5% auto;
+    border: 2px solid #555555;
+    border-radius: 8px;
+    padding: 0.5%;
+    background-color: #2a2a2a;
 }
 
-article {
-    margin-bottom: 1.5rem;
-}
-
-figure {
-    margin: 0.8rem 0;
-}
-
-figcaption {
-    font-size: 0.85rem;
-    color: #555;
-    margin-top: 0.3rem;
-}
 
 footer {
-    background: #222;
-    color: #fff;
+    background-color: #c00000;
+    padding: 2%;
+    color: white;
     text-align: center;
-    padding: 1.2rem 6vw;
-    margin-top: 3rem;
-    border-top: 4px solid #c0392b;
-    font-size: 0.9rem;
+    border-top: 3px solid white;
+}
+
+footer p {
+    margin-bottom: 0.5%;
+}
+
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.light header {
+    background-color: #eeeeee;
+    color: black;
+    border-bottom: 3px solid #c00000;
+}
+
+.light nav {
+    background-color: #dddddd;
+    border-bottom: 2px solid #bbbbbb;
+}
+
+.light nav a {
+    color: black;
+}
+
+.light section {
+    background-color: #f5f5f5;
+    border: 2px solid #cccccc;
+}
+
+.light h2 {
+    color: #c00000;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.light img {
+    background-color: white;
+    border: 2px solid #bbbbbb;
+}
+
+
+
+.light footer {
+    background-color: #eeeeee;
+    color: black;
+    border-top: 3px solid #c00000;
+}
+
+.light button {
+    background-color: #c00000;
+    color: white;
+    border: 2px solid #c00000;
+}
+
+.light button:hover {
+    background-color: #a00000;
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        width: 95vw;
+    }
+
+    img {
+        max-width: 60%;
+    }
+
+    h1 {
+        font-size: calc(4px + 2.5vw);
+    }
+
+    h2 {
+        font-size: calc(4px + 1.8vw);
+    }
+
+    button {
+        font-size: calc(4px + 1vw);
+    }
 }
