@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Sometimes document.referrer can be empty (for example, when the page is refreshed
     // or opened directly). In that case, we treat it as not coming from the big homepage
     // and skip the intro animation.
-    let cameFromBigHome = previousPage.includes("big-home.html");
+    let cameFromBigHome = previousPage.includes("home.html");
     // fallback: if there is no referrer, do not play the intro animation
     if (previousPage === "") {
         cameFromBigHome = false;
